@@ -14,7 +14,37 @@
   <title>Damla • Günlük Takip</title>
 </head>
 <body>
-  <main class="app-shell">
+
+  <section id="authScreen" class="auth-screen">
+    <div class="auth-card">
+      <p class="eyebrow">DAMLA • ORTAK TAKİP</p>
+      <h1>Birlikte takip edin.</h1>
+      <p class="auth-intro">İki telefonda da aynı ilaçlar, puanlar ve ödüller görünsün.</p>
+      <form id="authForm">
+        <label>E-posta<input id="authEmail" type="email" autocomplete="email" required placeholder="ornek@mail.com"></label>
+        <label>Şifre<input id="authPassword" type="password" autocomplete="current-password" minlength="6" required placeholder="En az 6 karakter"></label>
+        <button class="primary-btn" id="loginBtn" type="submit">Giriş yap</button>
+      </form>
+      <button class="secondary-btn" id="signupBtn" type="button">Yeni hesap oluştur</button>
+      <p class="auth-message" id="authMessage" aria-live="polite"></p>
+      <div id="trackerSetup" hidden>
+        <div class="auth-divider"></div>
+        <h2>Ortak takibi başlat</h2>
+        <p class="helper">Bir kişi takip oluşturup davet kodunu diğer kişiyle paylaşsın.</p>
+        <button class="primary-btn" id="createTrackerBtn" type="button">Yeni ortak takip oluştur</button>
+        <label>Davet kodu<input id="inviteCodeInput" maxlength="20" autocapitalize="characters" placeholder="Davet kodunu gir"></label>
+        <button class="secondary-btn" id="joinTrackerBtn" type="button">Davet koduyla katıl</button>
+      </div>
+      <div id="invitePanel" class="invite-panel" hidden>
+        <span class="eyebrow">PAYLAŞILACAK DAVET KODU</span>
+        <strong id="inviteCodeText"></strong>
+        <button class="secondary-btn" id="copyInviteBtn" type="button">Kodu kopyala</button>
+      </div>
+      <button class="text-btn signout-btn" id="signoutBtn" type="button" hidden>Çıkış yap</button>
+    </div>
+  </section>
+
+  <main class="app-shell" id="appShell" hidden>
     <header class="topbar">
       <div><p class="eyebrow" id="todayLabel"></p><h1>Merhaba, Damla</h1></div>
       <button class="icon-btn" id="notifyBtn" aria-label="Bildirimleri aç" title="Bildirimler">♧</button>
@@ -69,6 +99,7 @@
   </dialog>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="app.js"></script>
 </body>
 </html>
