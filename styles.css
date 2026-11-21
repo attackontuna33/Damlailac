@@ -86,3 +86,6 @@ footer div{display:flex;gap:14px;align-items:center}
 .manage-form input{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);border-radius:11px;background:#fff;font:inherit;font-size:14px}
 .manage-form .primary-btn,.manage-form .secondary-btn{margin-top:2px}
 .manage-open{text-decoration:none;color:var(--rose-dark);font-weight:750;font-size:12px;padding:5px}
+
+#notificationDialog .optional{display:block;margin-top:5px}
+#notificationDialog .helper{font-size:12px}
