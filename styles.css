@@ -30,3 +30,36 @@ footer div{display:flex;gap:14px;align-items:center}
 .week-day.week-future b{background:transparent;color:#ddd3ce}
 .streak-drop{transform:rotate(45deg)}
 .streak-drops i{transform:rotate(45deg)}
+
+.view-tabs{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;margin:0 0 22px;background:#eee7e2;border-radius:15px}
+.view-tab{border:0;background:transparent;color:#867a75;padding:11px;border-radius:11px;font-size:13px;font-weight:750}
+.view-tab.active{background:var(--paper);color:var(--rose-dark);box-shadow:0 3px 10px rgba(72,48,43,.07)}
+.pilates-view{display:grid;gap:15px}
+.pilates-intro{padding:8px 2px 3px}
+.pilates-intro h2{font:500 30px Georgia,serif;margin:0 0 7px}
+.pilates-intro p:last-child{font-size:13px;color:var(--muted);margin:0;line-height:1.5}
+.pilates-panel{padding:17px;background:var(--paper);border:1px solid var(--line);border-radius:19px;box-shadow:0 4px 15px rgba(72,48,43,.025)}
+.pilates-section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}
+.pilates-section-head .eyebrow{margin-bottom:4px}
+.pilates-section-head h3{font:500 20px Georgia,serif;margin:0}
+.pilates-link-form,.pilates-plan-form{display:grid;gap:10px}
+.pilates-link-form label,.pilates-plan-form label{display:block;font-size:12px;font-weight:700;color:var(--ink)}
+.pilates-link-form input,.pilates-plan-form input,.pilates-plan-form select{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);border-radius:11px;background:white;font:inherit;font-size:14px;color:var(--ink)}
+.pilates-form-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.pilates-add-btn{width:100%;border:0;border-radius:12px;padding:12px;background:#e9d7d4;color:#86545b;font-size:13px;font-weight:750}
+.pilates-link-list,.pilates-plan-list{display:grid;gap:8px;margin-top:12px}
+.pilates-link-card,.pilates-plan-card{display:flex;align-items:center;gap:10px;padding:12px;background:#faf6f3;border:1px solid #f0e8e3;border-radius:13px}
+.pilates-link-card>div,.pilates-plan-info{min-width:0;flex:1}
+.pilates-link-card strong,.pilates-plan-info strong{display:block;font-size:13px;overflow-wrap:anywhere}
+.pilates-link-card small,.pilates-plan-info small,.pilates-plan-date small{display:block;color:var(--muted);font-size:10px;margin-top:4px;overflow-wrap:anywhere}
+.pilates-open,.plan-open{text-decoration:none;color:var(--rose-dark);font-size:12px;font-weight:750;padding:8px 9px;background:#f5e8e5;border-radius:9px}
+.pilates-plan-date{width:62px;flex:none}
+.pilates-plan-date strong{font-size:11px;color:#80545b}
+.pilates-plan-card{flex-wrap:wrap}
+.pilates-plan-info{min-width:calc(100% - 80px)}
+.plan-toggle{border:0;border-radius:9px;background:#e6eee7;color:#52775c;padding:9px 10px;font-size:11px;font-weight:750;margin-left:auto}
+.plan-done .pilates-plan-info strong{text-decoration:line-through;color:#89928b}
+.plan-done .plan-toggle{background:#f1efeb;color:#817a74}
+.pilates-remove{border:0;background:transparent;color:#a99c96;font-size:20px;line-height:1;padding:5px}
+.pilates-plans-heading{margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}
+@media(max-width:360px){.pilates-panel{padding:14px}.pilates-plan-card{gap:7px}}
