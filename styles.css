@@ -63,3 +63,26 @@ footer div{display:flex;gap:14px;align-items:center}
 .pilates-remove{border:0;background:transparent;color:#a99c96;font-size:20px;line-height:1;padding:5px}
 .pilates-plans-heading{margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}
 @media(max-width:360px){.pilates-panel{padding:14px}.pilates-plan-card{gap:7px}}
+
+.pilates-player{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;background:#211c1b}
+.pilates-player iframe{display:block;width:100%;height:100%;border:0}
+.youtube-placeholder{width:100%;height:100%;min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:20px;text-align:center;color:#fff;background:linear-gradient(135deg,#493b39,#241e1d)}
+.youtube-placeholder span{font-size:38px;color:#eaa0a6}
+.youtube-placeholder strong{font:500 18px Georgia,serif}
+.youtube-placeholder small{max-width:300px;color:#d7c9c5;font-size:11px;line-height:1.5}
+.pilates-plan-form select{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);border-radius:11px;background:white;font:inherit;font-size:14px;color:var(--ink)}
+.pilates-plan-list{margin-top:15px}
+.weekly-day-card{padding:11px;background:#faf6f3;border:1px solid #f0e8e3;border-radius:14px}
+.weekly-day-card>header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;color:#80545b;font-size:12px}
+.weekly-day-card>header span{font-size:10px;color:var(--green);font-weight:750}
+.weekly-day-card.is-today{border-color:#e7c5c7;background:#fff9f8}
+.weekly-day-card .pilates-plan-card{padding:9px 2px;border:0;border-top:1px solid #eee5e0;border-radius:0;background:transparent}
+.pilates-plan-info{min-width:0;flex:1}
+.manage-section{padding:15px 0;border-top:1px solid var(--line)}
+.manage-section:first-of-type{padding-top:0;border-top:0}
+.manage-section h3{font:500 18px Georgia,serif;margin:2px 0 12px}
+.manage-form{display:grid;gap:8px}
+.manage-form label{display:block;font-size:12px;font-weight:700}
+.manage-form input{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);border-radius:11px;background:#fff;font:inherit;font-size:14px}
+.manage-form .primary-btn,.manage-form .secondary-btn{margin-top:2px}
+.manage-open{text-decoration:none;color:var(--rose-dark);font-weight:750;font-size:12px;padding:5px}
