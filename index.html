@@ -21,6 +21,11 @@
       <button class="icon-btn" id="notifyBtn" aria-label="Bildirimleri aç" title="Bildirimler">♧</button>
     </header>
 
+    <nav class="view-tabs" aria-label="Uygulama bölümleri">
+      <button id="trackerTab" class="view-tab active" type="button">İlaç takibi</button>
+      <button id="pilatesTab" class="view-tab" type="button">Pilates</button>
+    </nav>
+    <div id="trackerView">
     <section class="summary-card">
       <div class="summary-copy"><span>Bugünkü ilerleme</span><strong id="progressText">0 / 0</strong><small id="progressCaption">Bugün kendine iyi bak.</small></div>
       <div class="progress-ring" id="progressRing"><span id="progressPercent">0%</span></div>
@@ -37,6 +42,32 @@
     <section id="rewardList" class="reward-list"></section>
 
     <footer><span>Bir gün, bir adım.</span><div><button class="admin-link" id="shareBtn">Bağlantıyı paylaş</button><button class="admin-link" id="adminOpen">Yönetim</button></div></footer>
+  </div>
+    <section id="pilatesView" class="pilates-view" hidden>
+      <header class="pilates-intro"><p class="eyebrow">HAREKET VE İYİLİK</p><h2>Pilates</h2><p>Bağlantılarını sakla, her gün için küçük bir plan oluştur.</p></header>
+      <section class="pilates-panel">
+        <div class="pilates-section-head"><div><p class="eyebrow">VİDEO VE DERSLER</p><h3>Bağlantılarım</h3></div></div>
+        <form id="pilatesLinkForm" class="pilates-link-form">
+          <label>Bağlantı adı<input id="pilatesLinkTitle" maxlength="60" required placeholder="Örn. Başlangıç Pilatesi" /></label>
+          <label>Link<input id="pilatesLinkUrl" type="url" inputmode="url" required placeholder="https://..." /></label>
+          <button class="pilates-add-btn" type="submit">＋ Bağlantı ekle</button>
+        </form>
+        <div id="pilatesLinks" class="pilates-link-list"></div>
+      </section>
+      <section class="pilates-panel">
+        <div class="pilates-section-head"><div><p class="eyebrow">GÜNLÜK RUTİN</p><h3>Plan oluştur</h3></div></div>
+        <form id="pilatesPlanForm" class="pilates-plan-form">
+          <label>Plan adı<input id="pilatesPlanTitle" maxlength="60" required placeholder="Örn. 15 dk esneme" /></label>
+          <div class="pilates-form-row"><label>Gün<input id="pilatesPlanDate" type="date" required /></label><label>Saat <span class="optional">(isteğe bağlı)</span><input id="pilatesPlanTime" type="time" /></label></div>
+          <label>Bağlantı <span class="optional">(isteğe bağlı)</span><select id="pilatesPlanLink"><option value="">Bağlantı seçme</option></select></label>
+          <label>Not <span class="optional">(isteğe bağlı)</span><input id="pilatesPlanNote" maxlength="120" placeholder="Örn. kısa bir çalışma" /></label>
+          <button class="pilates-add-btn" type="submit">＋ Günlük plan ekle</button>
+        </form>
+        <div class="pilates-section-head pilates-plans-heading"><div><p class="eyebrow">TAKVİMİN</p><h3>Planlarım</h3></div></div>
+        <div id="pilatesPlanList" class="pilates-plan-list"></div>
+      </section>
+    </section>
+
   </main>
 
   <dialog id="medicineDialog" class="modal">
