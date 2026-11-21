@@ -62,6 +62,16 @@
     </section>
   </main>
 
+  <dialog id="notificationDialog" class="modal">
+    <form id="notificationTimesForm" method="dialog">
+      <div class="modal-head"><h2>İlaç hatırlatmaları</h2><button type="button" class="close-btn" data-close="notificationDialog">×</button></div>
+      <p class="helper">Saatleri ayarla; bu cihazda bildirim izni açık olduğunda hatırlatmalar bu uygulama açıkken çalışır.</p>
+      <label>Sabah <span class="optional" id="morningReminderCount"></span><input id="morningReminderTime" type="time" /></label>
+      <label>Akşam <span class="optional" id="eveningReminderCount"></span><input id="eveningReminderTime" type="time" /></label>
+      <button class="primary-btn" type="submit">Saatleri kaydet</button>
+    </form>
+  </dialog>
+
   <dialog id="medicineDialog" class="modal">
     <form id="medicineForm" method="dialog">
       <div class="modal-head"><h2>İlaç ekle</h2><button type="button" class="close-btn" data-close="medicineDialog">×</button></div>
